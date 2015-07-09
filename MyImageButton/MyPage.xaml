@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:control="clr-namespace:MyImageButton;assembly=MyImageButton"
+x:Class="MyImageButton.MyPage" BackgroundColor="White">
+	<ContentPage.Content>
+		<StackLayout Padding="20" Spacing="20">
+			<control:ImageButton Command="{Binding ToqueCommand}" Source="http://goo.gl/jGQ4Z4"></control:ImageButton>
+			<control:ImageButton Command="{Binding ToqueCommand}" Source="icone.png"></control:ImageButton>
+			<Label Text="{Binding Texto}"></Label>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
